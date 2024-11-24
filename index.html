@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <!-- Heading Name -->
+    <div class="heading">
+        <h1>Image Gallery</h1>
+    </div>
+
+    <!-- Image Gallery section all images in one div -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/1130980/pexels-photo-1130980.jpeg?cs=srgb&dl=assortment-book-bindings-books-1130980.jpg&fm=jpg"
+                onclick="openModal('https://images.pexels.com/photos/1130980/pexels-photo-1130980.jpeg?cs=srgb&dl=assortment-book-bindings-books-1130980.jpg&fm=jpg')"
+                alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://jpcatholic.edu/news_press/images/literary-agent-image.jpg"
+                onclick="openModal('https://jpcatholic.edu/news_press/images/literary-agent-image.jpg')"
+                alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/1005324/literature-book-open-pages-1005324.jpeg?cs=srgb&dl=antique-book-book-bindings-1005324.jpg&fm=jpg"
+                onclick="openModal('https://images.pexels.com/photos/1005324/literature-book-open-pages-1005324.jpeg?cs=srgb&dl=antique-book-book-bindings-1005324.jpg&fm=jpg')"
+                alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?cs=srgb&dl=bookcase-books-bookshelves-159711.jpg&fm=jpg"
+                onclick="openModal('https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?cs=srgb&dl=bookcase-books-bookshelves-159711.jpg&fm=jpg')"
+                alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="https://th.bing.com/th/id/OIP.gqMAPZXNZiGhlGhuzPSrRAHaDy?rs=1&pid=ImgDetMain"
+                onclick="openModal('https://th.bing.com/th/id/OIP.gqMAPZXNZiGhlGhuzPSrRAHaDy?rs=1&pid=ImgDetMain')"
+                alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="https://learningwitchcraft.com/wp-content/uploads/2016/10/Male-Witch-600x399.jpg"
+                onclick="openModal('https://learningwitchcraft.com/wp-content/uploads/2016/10/Male-Witch-600x399.jpg')"
+                alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="https://2.bp.blogspot.com/-ZVONsPnpde4/WOVeR_-jDDI/AAAAAAAABtc/x8ONu1PA5n85-_g-_PH5rI4xzmu-5uhwQCLcB/s640/PicMonkey%2BImage.jpg"
+                onclick="openModal('https://2.bp.blogspot.com/-ZVONsPnpde4/WOVeR_-jDDI/AAAAAAAABtc/x8ONu1PA5n85-_g-_PH5rI4xzmu-5uhwQCLcB/s640/PicMonkey%2BImage.jpg')"
+                alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="https://th.bing.com/th/id/R.fa93c70dbddffb733cb8ca38626def6c?rik=x005WAps0fZVPA&riu=http%3a%2f%2ftrumpwallpapers.com%2fwp-content%2fuploads%2fBook-Wallpaper-02-2560-x-1600.jpg&ehk=BCHlVYS3sT9Mf6WBJRGIyZXVgYZ11VxNfwvHUBZSxOo%3d&risl=&pid=ImgRaw&r=0"
+                onclick="openModal('https://th.bing.com/th/id/R.fa93c70dbddffb733cb8ca38626def6c?rik=x005WAps0fZVPA&riu=http%3a%2f%2ftrumpwallpapers.com%2fwp-content%2fuploads%2fBook-Wallpaper-02-2560-x-1600.jpg&ehk=BCHlVYS3sT9Mf6WBJRGIyZXVgYZ11VxNfwvHUBZSxOo%3d&risl=&pid=ImgRaw&r=0')"
+                alt="Image 8">
+        </div>
+    </div>
+
+    <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+    </div>
+</body>
+
+</html>
